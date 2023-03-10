@@ -48,7 +48,7 @@ int main()
         }
         double L = 0, U = maxArea;
         double mid;
-        while (U - L > 1e-4)
+        while (U - L > 1e-4) // binary search
         {
             mid = (L + U) / 2;
             if (isPossible(mid, area, n, f + 1))
